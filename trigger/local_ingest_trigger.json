@@ -1,0 +1,25 @@
+{
+	"name": "local_ingest_trigger",
+	"properties": {
+		"description": "Copying data from local folder",
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pl_ingest_localfiles",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/population/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/a12fdd66-db8b-4da5-9f37-79fd82419a3d/resourceGroups/covid-df-basics/providers/Microsoft.Storage/storageAccounts/covidreportingsa1601",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

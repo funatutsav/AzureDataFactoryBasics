@@ -1,0 +1,9 @@
+{
+	"name": "covid-repository-adf",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "4af93402-b3c5-4f51-8fe3-716e14a29cf6",
+		"tenantId": "b49940da-7612-4b7b-b462-535c5c5cdb56"
+	}
+}
